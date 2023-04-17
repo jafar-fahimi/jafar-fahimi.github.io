@@ -1,287 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
 
-<head>
+    <title>Jafar Fahimi | A Front-End Developer based in Kabul, Afghanistan</title>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+    <meta name="description" content="I am Jafar Fahimi; a passionate react developer." />
+    <meta
+      name="keywords"
+      content="Skills: HTML, CSS, JavaScript, TypeScript, Bootstrap, Tailwindcss, React, Redux, Nextjs"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
-  <!-- Put your site title here -->
-  <title>
-    Jafar Fahimi | A Front-End Developer based in Kabul, Afghanistan
-  </title>
+  <body>
+    <!-- ##### Header ##### -->
 
-  <meta name="description" content="I am Jafar Fahimi; a passionate react developer.">
-  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
-  <meta name="keywords" content="HTML, CSS, JavaScript, TypeScript, bootstrap, tailwindcss, React, Redux, Nextjs" />
-  <link rel="stylesheet" href="index.css" />
-</head>
-
-<body>
-
-  <!-- ***** Header ***** -->
-
-  <header class="header" role="banner" id="top">
-    <div class="row">
-      <nav class="nav" role="navigation">
-        <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-          <!-- <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li> -->
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <div class="header__text-box row">
-      <div class="header__text">
-        <h1 class="heading-primary">
-          <!-- Replace the following name with your name -->
-          <span>Jafar Fahimi</span>
-        </h1>
-        <!-- Put a small paragraph about yourself -->
-        <p>A Front-End Developer based in Kabul, Afghanistan</p>
-        <a href="#contact" class="btn btn--pink">Get in touch</a>
-      </div>
-    </div>
-  </header>
-
-  <main role="main">
-
-    <!-- ***** Work ***** -->
-
-    <section class="work" id="work">
+    <header class="header" role="banner" id="top">
       <div class="row">
-        <h2>My Work</h2>
-        <div class="work__boxes">
+        <nav class="nav" role="navigation">
+          <ul class="nav__items">
+            <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+            <!-- <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li> -->
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__text-box row">
+        <div class="header__text">
+          <h1 class="heading-primary">
+            <span>Jafar Fahimi</span>
+          </h1>
+          <!-- a small paragraph about yourself -->
+          <p>A Front-End Developer based in Kabul, Afghanistan</p>
+          <a href="#contact" class="btn btn--pink">Get in touch</a>
+        </div>
+      </div>
+    </header>
 
-          <!-- Each div with the work__box class is a project. -->
+    <main role="main">
+      <!-- ##### Work ##### -->
 
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Personal Dashboard</h3>
-              <p>
-                A Chrome extension to help you focus and stay up-to-date.
-              </p>
-              <ul class="work__list">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-              </ul>
+      <section class="work" id="work">
+        <div class="row">
+          <h2>My Work</h2>
+          <div class="work__boxes">
+            <!-- Each div with the work__box class is a project. -->
 
-              <div class="work__links">
-                <a href="https://nisar.surge.sh" target="_blank" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/nisarhassan12/portfolio" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
-                </a>
+            <div class="work__box">
+              <div class="work__text">
+                <h3>Personal Dashboard</h3>
+                <p>A Chrome extension to help you focus and stay up-to-date.</p>
+                <ul class="work__list">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>React</li>
+                </ul>
+
+                <div class="work__links">
+                  <a href="https://nisar.surge.sh" target="_blank" class="link__text">
+                    Visit Site <span>&rarr;</span>
+                  </a>
+                  <a
+                    href="https://github.com/nisarhassan12/portfolio"
+                    title="View Source Code"
+                    target="_blank"
+                  >
+                    <img src="./images/github.svg" class="work__code" alt="GitHub" />
+                  </a>
+                </div>
+              </div>
+              <div class="work__image-box">
+                <img src="./images/dashboard-2.png" class="work__image" alt="Project 1" />
               </div>
             </div>
-            <div class="work__image-box">
-              <img src="./images/dashboard-2.png" class="work__image" alt="Project 1" />
-            </div>
-          </div>
 
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Password Generator</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
-              </p>
-              <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
-              </ul>
+            <div class="work__box">
+              <div class="work__text">
+                <h3>Password Generator</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, eius.</p>
+                <ul class="work__list">
+                  <li>React</li>
+                  <li>Next.js</li>
+                  <li>Node</li>
+                  <li>MongoDB</li>
+                </ul>
 
-              <div class="work__links">
-                <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="#">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
+                <div class="work__links">
+                  <a href="#" class="link__text"> Visit Site <span>&rarr;</span> </a>
+                  <a href="#">
+                    <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub" />
+                  </a>
+                </div>
+              </div>
+              <div class="work__image-box">
+                <img src="./images/password.jpg" class="work__image" alt="Project 1" />
               </div>
             </div>
-            <div class="work__image-box">
-              <img src="./images/password.jpg" class="work__image" alt="Project 1" />
-            </div>
-          </div>
 
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Quizzical App</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
-              </p>
-              <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
-              </ul>
+            <div class="work__box">
+              <div class="work__text">
+                <h3>Quizzical App</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, eius.</p>
+                <ul class="work__list">
+                  <li>React</li>
+                  <li>Next.js</li>
+                  <li>Node</li>
+                  <li>MongoDB</li>
+                </ul>
 
-              <div class="work__links">
-                <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="#">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
+                <div class="work__links">
+                  <a href="#" class="link__text"> Visit Site <span>&rarr;</span> </a>
+                  <a href="#">
+                    <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub" />
+                  </a>
+                </div>
               </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/quiz.jpg" class="work__image" alt="Project 3" />
+              <div class="work__image-box">
+                <img src="./images/quiz.jpg" class="work__image" alt="Project 3" />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ***** Clients ***** -->
-<!--
+      <!-- ##### Clients ##### -->
+      <!--
     <section class="client" id="clients">
       <div class="row">
         <h2>Clients</h2>
         <div class="client__logos">
-          <img src="./images/ronjones.png" class="client__logo" alt="Company 2" />
-          <img src="./images/goldengrid.png" class="client__logo" alt="Company 3" />
-          <img src="./images/bullseye.png" class="client__logo" alt="Company 1" />
-          <img src="./images/mighty-furnitures.png" class="client__logo" alt="Company 1" />
-          <img src="./images/fastlane.png" class="client__logo" alt="Company 3" />
-          <img src="./images/chippy.png" class="client__logo" alt="Company 1" />
+          <img src="./images/clients-logo/ronjones.png" class="client__logo" alt="Company 2" />
+          <img src="./images/clients-logo/goldengrid.png" class="client__logo" alt="Company 3" />
+          <img src="./images/clients-logo/bullseye.png" class="client__logo" alt="Company 1" />
+          <img src="./images/clients-logo/mighty-furnitures.png" class="client__logo" alt="Company 1" />
+          <img src="./images/clients-logo/fastlane.png" class="client__logo" alt="Company 3" />
+          <img src="./images/clients-logo/chippy.png" class="client__logo" alt="Company 1" />
         </div>
       </div>
     </section> -->
 
-<!-- scrimba projects -->
-    <section class="my-works" id="work">
-        <h2 class="section__title section__title--work">My projects</h2>
-        <p class="section__subtitle section__subtitle--work">A selection of my range of work </p>
-
-        <div class="portfolio">
+      <!-- scrimba projects -->
+      <section class="my-works" id="work">
+        <div class="row">
+          <h2>Other Projects</h2>
+          <h3>A selection of my range of works</h3>
+          <div class="portfolio">
             <!-- Portfolio item 01 -->
             <a href="portfolio-item.html" class="portfolio__item">
-                <img src="img/oldagram-square.png" alt="" class="portfolio__img">
+              <img src="images/my-works/oldagram-square.png" alt="" class="portfolio__img" />
             </a>
 
             <!-- Portfolio item 02 -->
             <a href="portfolio-item.html" class="portfolio__item">
-                <img src="img/tenzies.jpg" alt="" class="portfolio__img">
+              <img src="images/my-works/tenzies.jpg" alt="" class="portfolio__img" />
             </a>
-
 
             <!-- Portfolio item 03 -->
             <a href="portfolio-item.html" class="portfolio__item">
-                <img src="img/password-generator.jpg" alt="" class="portfolio__img">
+              <img src="images/my-works/password-generator.jpg" alt="" class="portfolio__img" />
             </a>
 
             <!-- Portfolio item 04 -->
+            <a href="portfolio-item.html" class="portfolio__item">
+              <img src="images/my-works/meme-generator.jpg" alt="" class="portfolio__img" />
+            </a>
 
             <!-- Portfolio item 05 -->
             <a href="portfolio-item.html" class="portfolio__item">
-                <img src="img/meme-generator.jpg" alt="" class="portfolio__img">
+              <img src="images/my-works/personal-dashboard.png" alt="" class="portfolio__img" />
             </a>
 
             <!-- Portfolio item 06 -->
             <a href="portfolio-item.html" class="portfolio__item">
-                <img src="img/personal-dashboard.png" alt="" class="portfolio__img">
-            </a>
-
-            <!-- Portfolio item 06 -->
-            <a href="portfolio-item.html" class="portfolio__item">
-                <img src="img/experiences.png" alt="" class="portfolio__img">
+              <img src="images/my-works/experiences.png" alt="" class="portfolio__img" />
             </a>
           </div>
+          <a href="#" style="width: 40%" class="link__text">See More</a>
+        </div>
       </section>
 
+      <!-- ##### About ##### -->
+      <section class="about" id="about">
+        <div class="row">
+          <h2>About Me</h2>
+          <div class="about__content">
+            <div class="about__text">
+              <p>
+                I'm a web developer and designer based out of Kabul, Afghanistan I love building apps that
+                solve real-world problems, and that are delightful to use. My specialities include TypeScript,
+                React JS, Nextjs, Redux, Tailwind CSS, Styled Components.
+              </p>
+              <a
+                href="https://drive.google.com/file/d/1w9MfP7OTazDHagUCDznJYJgggMFXTFsc/view?usp=share_link"
+                class="btn"
+                >My Resume</a
+              >
+            </div>
 
-    <!-- ***** About ***** -->
-    <section class="about" id="about">
+            <div class="about__photo-container">
+              <!-- a nice photo of yourself -->
+              <img class="about__photo" src="./images/jafar(1).jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ##### Contact ##### -->
+
+    <section class="contact" id="contact">
       <div class="row">
-        <h2>About Me</h2>
-        <div class="about__content">
-          <div class="about__text">
-            <!-- Replace the below paragraph with info about yourself -->
-           I'm a web developer and designer based out of London, UK. I love building apps that solve real-world problems, and that are delightful to use. My specialities include TypeScript, React JS, Tailwind CSS, and Styled Components.</p>
-            <p>My background is in teaching and marketing, and I have a bachelors degree in English from Kings College. I also have five adorable cats.</p>
-            <!-- Provide a link to your resume -->
-            <a href="#" class="btn">My Resume</a>
-          </div>
-
-          <div class="about__photo-container">
-            <!-- Add a nice photo of yourself -->
-            <img class="about__photo" src="./images/jane.jpg" alt="" />
-          </div>
+        <h2>Get in Touch</h2>
+        <div class="contact__info">
+          <p>
+            Are you looking for a fast-performing and user-friendly website to represent your product or
+            business? or looking for any kind of consultation? or want to ask questions? or have some advice
+            for me or just want to say "Hi 👋" in any case feel free to Let me know. I will do my best to
+            respond back. 😊 The quickest way to reach out to me is via an email.
+          </p>
+          <a href="mailto:jafar.fahimi12@gmail.com" class="btn">jafar.fahimi12@gmail.com</a>
         </div>
       </div>
     </section>
-  </main>
 
-  <!-- ***** Contact ***** -->
+    <!-- ##### Footer ##### -->
 
-  <section class="contact" id="contact">
-    <div class="row">
-      <h2>Get in Touch</h2>
-      <div class="contact__info">
-        <p>
-          Are you looking for a fast-performing and user-friendly website to
-          represent your product or business? or looking for any kind of
-          consultation? or want to ask questions? or have some advice for me
-          or just want to say "Hi 👋" in any case feel free to Let me know. I
-          will do my best to respond back. 😊 The quickest way to reach out to
-          me is via an email.
-        </p>
-        <!-- Replace the email with yours -->
-        <a href="mailto:you@example.com" class="btn">you@example.com</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ***** Footer ***** -->
-
-  <footer role="contentinfo" class="footer">
-    <div class="row">
-      <!-- Update the links to point to your accounts -->
-      <ul class="footer__social-links">
-        <li class="footer__social-link-item">
+    <footer role="contentinfo" class="footer">
+      <div class="row">
+        <ul class="footer__social-links">
+          <!-- <li class="footer__social-link-item">
           <a href="https://twitter.com/nisarhassan12/" title="Link to Twitter Profile">
             <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">
           </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://github.com/nisarhassan12/" title="Link to Github Profile">
-            <img src="./images/github.svg" class="footer__social-image" alt="Github">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://codepen.io/nisar_hassan" title="Link to Codepen Profile">
-            <img src="./images/codepen.svg" class="footer__social-image" alt="Codepen">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href=https://www.linkedin.com/in/nisar-hassan-naqvi-413466199/">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
-          </a>
-        </li>
-      </ul>
-    </div>
-  </footer>
+        </li> -->
+          <li class="footer__social-link-item">
+            <a href="https://github.com/jafarFahimi" title="Link to Github Profile">
+              <img src="./images/github.svg" class="footer__social-image" alt="Github" />
+            </a>
+          </li>
+          <li class="footer__social-link-item">
+            <a href="https://stackoverflow.com/users/21382492/jafar" title="Link to Stack_Overflow Profile">
+              <img src="./images/stackoverflow.svg" class="footer__social-image" alt="Codepen" />
+            </a>
+          </li>
+          <li class="footer__social-link-item">
+            <a href="https://www.linkedin.com/in/jafar-fahimi-54a30022b">
+              <img
+                src="./images/linkedin.svg"
+                title="Link to Linkedin Profile"
+                class="footer__social-image"
+                alt="Linkedin"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
 
-  <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
-  </a>
-  <script src="./index.js"></script>
-</body>
-
+    <a href="#top" class="back-to-top" title="Back to Top">
+      <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image" />
+    </a>
+    <script src="./index.js"></script>
+  </body>
 </html>

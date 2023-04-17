@@ -262,7 +262,7 @@ body:not(.user-is-tabbing) a:focus {
 .link__text {
   position: relative;
   display: inline-block;
-  padding: 0.6rem;
+  padding: 0.6rem 0.8rem;
   color: inherit;
   text-decoration: none;
   border: 1px solid var(--pink);
@@ -275,7 +275,7 @@ body:not(.user-is-tabbing) a:focus {
   top: 0;
   left: 0;
   right: 100%;
-  background: var(--black);
+  background: var(--white);
   height: 100%;
   z-index: -1;
   transition: all 0.2s cubic-bezier(1, 0.68, 0.16, 0.9);
@@ -321,13 +321,16 @@ body:not(.user-is-tabbing) a:focus {
 /* my-works */
 
 .my-works {
-  /* background-color: var(--color-dark); */
   /* color: var(--color-light); */
+  /* background-color: var(--color-dark); */
   text-align: center;
+}
+.my-works h2 {
+  text-align: left;
 }
 
 .portfolio {
-  margin: 0 auto;
+  margin: 0 auto 3rem;
   max-width: 1000px;
   display: grid;
   grid-gap: 2em;
@@ -442,14 +445,13 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 
 .header {
-  background: linear-gradient(rgba(37, 37, 37, 0.1), rgba(105, 105, 105, 0.8)), url("./images/kabul\(1\).jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
+    url("./images/kabul\(1\).jpg");
   height: 100vh;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   font-size: var(--font-size-normal);
-  color: var(--white-1);
-  text-shadow: 0 0 3px #000;
 }
 
 .header__text {
