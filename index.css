@@ -197,6 +197,11 @@ a {
 ::-moz-focus-inner {
   border: 0;
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  right: 40px;
+}
 
 button:focus,
 a:focus {
@@ -210,6 +215,10 @@ body:not(.user-is-tabbing) a:focus {
 
 .link:hover {
   color: var(--pink);
+}
+
+.simple-link {
+  text-decoration: none;
 }
 
 .btn {
@@ -358,6 +367,14 @@ body:not(.user-is-tabbing) a:focus {
   transform: scale(1.2);
   opacity: 0.5;
 }
+
+.work__list-container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 2rem;
+}
+
 /* end of my-works */
 
 @media (max-width: 900px) {
@@ -379,7 +396,11 @@ body:not(.user-is-tabbing) a:focus {
 .nav {
   display: flex;
   justify-content: flex-end;
-  padding: var(--gutter-normal) 0;
+  width: 100%;
+  align-items: center;
+  right: 0;
+  padding: 0.1rem 1.4rem;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .nav__items {
@@ -448,6 +469,7 @@ body:not(.user-is-tabbing) a:focus {
   background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
     url("./images/kabul\(1\).jpg");
   height: 100vh;
+  width: 100%;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
