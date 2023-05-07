@@ -1,0 +1,5 @@
+features:
+- create new note
+- delete note
+- using react-mde
+- setting & getting notes to/on localStorage
