@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="./fontawesome/fontawesome-all.min.css" />
+      <link rel="stylesheet" href="style.css" />
+      <script src="./fontawesome/fontawesome-all.min.js" defer></script>
+      <script src="./script.js" defer></script>
+      <title>Jafar Fashion Design</title>
+   </head>
+   <body>
+      <main class="container">
+         <!-- <span class="small-image"> down is better name!-->
+         <span class="logo">
+            <i class="fas fa-tshirt"></i>
+         </span>
+         <!--
+            we can just use flex between h1 text & its a:
+             <div class="headings">
+            <h1>fashion style</h1>
+            <a href="#">Visit&nbsp;Us</a>
+         </div> -->
+         <h1>Fashion Style <a href="#">Visit Us</a></h1>
+
+         <!-- <section class="main-container"> -->
+         <section class="row">
+            <!-- <div class="left-col"> since 2 cols & styleing is: col:first-child -->
+            <div class="col">
+               <div>
+                  <h2>Our new clothing line</h2>
+                  <p>__ View 2023 Design Today</p>
+               </div>
+               <!-- <div class="image-col">
+                  <img src="./images/img-2.jpg" alt="" />
+               </div> -->
+               <img class="image-col" src="./images/img-2.jpg" alt="" />
+            </div>
+            <div class="col">
+               <img class="image-col" src="./images/img-1.jpg" alt="" />
+               <a href="#">Shop Now</a>
+               <!-- seems as if a by def takes 80% width but button is min-content, thought with same styles -->
+               <!-- <button>Shop Now</button> -->
+            </div>
+         </section>
+      </main>
+   </body>
+</html>

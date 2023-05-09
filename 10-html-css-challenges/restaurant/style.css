@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background: url("./images/rio.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed;  */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.header {
+  height: 20vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+.header-top-logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80vw;
+  margin-top: 16px;
+  font-size: 2rem;
+}
+.job-title {
+  color: rgb(4, 76, 136);
+}
+.call-us {
+  color: #fff;
+}
+.header-list {
+  display: flex;
+  margin-top: 20px;
+  font-size: 25px;
+  justify-content: center;
+  /* width: 80vw; */
+  background-color: rgb(0, 140, 255);
+}
+.header-list a {
+  color: #fff;
+  display: inline-block;
+  padding: 0.7rem 3rem;
+  text-decoration: none;
+}
+.header-list a:hover {
+  background-color: rgb(1, 118, 214);
+}
+.middle {
+  font-size: 2rem;
+  margin-top: 100px;
+  margin-left: -200px;
+}
+.active-white:hover {
+  background-color: antiquewhite !important;
+}
+.active-white {
+  background-color: #fff;
+  color: rgb(0, 140, 255) !important;
+}
+.active {
+  background-color: rgb(4, 76, 136);
+  color: #fff;
+}
+.middle {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+.middle h1,
+.middle h6 {
+  padding: 10px 12px;
+  font-weight: 400;
+}
+.middle .active-white {
+  margin: 13px 0 22px;
+  cursor: pointer;
+}
+.btn-normal {
+  background-color: rgb(0, 140, 255);
+  color: white;
+}
+@media screen and (max-width: 968px) {
+  .header-list li a {
+    font-size: 1.5rem;
+    padding: 10px 1rem;
+  }
+  .header-top-logos {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .middle {
+    margin-top: 240px;
+    font-size: 1.5rem;
+  }
+  .header-top-logos {
+    font-size: 1.5rem;
+  }
+  .header-list {
+    flex-direction: column;
+    width: 80vw;
+    align-items: center;
+  }
+  .header-list li a,
+  .header-list li {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .header-top-logos {
+    font-size: 1rem;
+  }
+  .middle {
+    margin-top: 200px;
+    font-size: small;
+  }
+}

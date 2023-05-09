@@ -1,0 +1,164 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   text-transform: capitalize;
+   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+   font-style: italic;
+   box-sizing: border-box;
+}
+
+:root {
+   --color-primary: #764400;
+   --color-secondary: #ffe8c8;
+   --color-ternary: #a66000;
+}
+/* instead add border to body! */
+/* main {
+    background-color: var(--color-primary);
+}
+div.col {
+    background-color: var(--color-secondary);
+    min-height: 100vh;
+    margin: 0 0.9rem;
+    padding: 1rem 200px;
+  } */
+body {
+   border-left: 1.1rem solid var(--color-primary);
+   border-right: 1.1rem solid var(--color-primary);
+   display: flex;
+   justify-content: center;
+}
+/* main {  down is better:*/
+main.container {
+   padding: 2rem;
+}
+.logo {
+   color: var(--color-primary);
+   font-size: 3rem;
+   /* width don't work on i, it is text! */
+}
+
+h1 {
+   color: #a66000;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-between;
+   font-size: 4rem;
+   margin: 0;
+}
+
+h1 a {
+   transform: scale(0.7);
+}
+
+/* end of nav style! */
+.row img {
+   max-width: 400px;
+}
+.row {
+   display: flex;
+   /* justify-content: space-between; */
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   /* width: 100%; */
+}
+a {
+   border: 0;
+   color: white;
+   font-style: normal;
+   padding: 0.7rem 2rem;
+   cursor: pointer;
+   /* transform: skewX(-15deg); will make the inner text too! so ::after; */
+   position: relative;
+   display: block;
+   font-weight: 400;
+   text-decoration: none;
+   background-color: transparent;
+}
+a::after {
+   background-color: var(--color-ternary);
+   width: 100%;
+   height: 100%;
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: -1;
+   transform: skew(-30deg);
+}
+/* .col:first-child,
+.col:last-child {
+   flex: 1;
+}
+just style .col:
+*/
+.col {
+   flex: 1;
+}
+/* .col:first-child h2 { down is better:*/
+h2 {
+   font-weight: 300;
+   font-size: 3rem;
+   margin: 1rem 0;
+}
+/* .col:first-child p { */
+p {
+   margin: 1rem 0;
+   color: rgb(80, 78, 78);
+}
+/*
+instead of styling container div of imgs, use box-shadow for images themsleves.
+.col:first-child .image-col,
+.col:last-child .image-col {
+   background-color: var(--color-ternary);
+   width: min-content;
+} */
+
+img {
+   box-shadow: 15px 15px #a66000;
+   margin: 3rem 0;
+}
+
+.col:first-child {
+   margin-right: 3rem;
+}
+.col:first-child img {
+   /* transform: translate(1rem, 1rem); */
+   box-shadow: -15px -15px #a66000;
+}
+.col:last-child a {
+   font-size: x-large;
+   font-size: 3rem;
+   /* align-self: stretch;
+   justify-self: flex-end; */
+   /* width: 100%; */
+   text-align: center;
+}
+.col:last-child {
+   /* no need these just add margin top! */
+   /* display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: flex-end; */
+}
+.col:last-child img {
+   transform: translate(-1rem, -1rem);
+}
+@media screen and (max-width: 940px) {
+   .row {
+      justify-content: start;
+   }
+   .col {
+      /* by flex:1; it takes the whole width(100%) */
+      flex: 0;
+   }
+   .col:last-child a {
+      margin: 2rem 0;
+   }
+   h2 {
+      max-width: 100%;
+   }
+}

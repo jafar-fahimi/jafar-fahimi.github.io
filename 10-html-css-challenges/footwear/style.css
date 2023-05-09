@@ -1,0 +1,104 @@
+* {
+   box-sizing: border-box;
+}
+body {
+   background-color: #cb021c;
+   margin: 0;
+   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+   transition: background 0.5s ease-in-out; /* for chevron buttons clicks */
+   overflow-x: hidden;
+}
+a {
+   text-decoration: none;
+   color: #fff;
+}
+.hamburgar {
+   position: fixed;
+   top: 1rem;
+   left: 1rem;
+   font-size: 1.8rem;
+}
+.phone {
+   position: fixed;
+   top: 1rem;
+   right: 1rem;
+   font-size: 1.8rem;
+}
+.logo {
+   color: #fff;
+   font-size: 1.7rem;
+   margin: 2rem 0;
+   text-align: center;
+}
+.logo i {
+   font-size: 3rem;
+}
+.logo h2 {
+   font-weight: normal;
+   margin: 0;
+}
+.logo p {
+   color: #40020e;
+   font-weight: bold;
+   margin: 0;
+}
+.carousel-container {
+   width: 100vw;
+   margin-top: 5rem;
+   height: 70vh;
+   overflow: hidden;
+   /* don't work if in .carousel*/
+   position: relative;
+}
+.carousel {
+   display: flex;
+   position: absolute;
+   left: 0;
+   top: 0;
+   transform: translateX(0);
+   /* do not know! */
+   transition: transform 0.5s ease-in-out;
+}
+.slide {
+   /* position: absolute; */
+   width: 100vw;
+   text-align: center;
+}
+.slide img {
+   /* object-fit: cover; */
+   /* do not know! */
+   height: 300px;
+   /* width: 300px; */
+}
+.slide h1 {
+   color: #fff;
+   font-size: 4rem;
+   letter-spacing: 1px;
+   font-weight: 100;
+   margin-top: 1rem;
+}
+.slide a {
+   background-color: #40020e;
+   padding: 1rem 2rem;
+   font-size: 1.5rem;
+}
+.arrow {
+   cursor: pointer;
+   background: transparent;
+   color: black;
+   position: absolute;
+   top: 30%;
+   transform: translateY(-50%);
+   font-size: 3rem;
+   border: none;
+   opacity: 50%;
+}
+.arrow:hover {
+   opacity: 100%;
+}
+.left-arrow {
+   left: 2rem;
+}
+.right-arrow {
+   right: 2rem;
+}

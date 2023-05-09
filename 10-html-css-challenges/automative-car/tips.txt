@@ -1,0 +1,6 @@
+main{height:calc(100vh-100px)}
+
+section{position:relative; top:100px left:80px;}
+
+section{display:inline-block;}// each elem is as big as the biggest!!!
+each h1 in section become inline-block
