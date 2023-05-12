@@ -2,7 +2,7 @@
    box-sizing: border-box;
 }
 body {
-   background-color: #cb021c;
+   background-color: #bd2b3f;
    margin: 0;
    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
    transition: background 0.5s ease-in-out; /* for chevron buttons clicks */
