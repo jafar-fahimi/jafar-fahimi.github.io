@@ -355,6 +355,7 @@ body:not(.user-is-tabbing) a:focus {
 .portfolio__item {
    background: var(--color-accent);
    overflow: hidden;
+   max-height: 300px;
 }
 
 .portfolio__img {
@@ -407,10 +408,9 @@ body:not(.user-is-tabbing) a:focus {
    right: 0;
    padding: 0.1rem 1.4rem;
    background: rgba(255, 255, 255, 0.3);
-   box-shadow: 0 8px 32px 0 rgba(106, 109, 152, 0.37);
+   box-shadow: 0 8px 32px 0 rgba(134, 136, 156, 0.37);
    backdrop-filter: blur(10.5px);
    -webkit-backdrop-filter: blur(10.5px);
-   border-radius: 10px;
    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
