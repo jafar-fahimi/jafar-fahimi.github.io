@@ -406,7 +406,12 @@ body:not(.user-is-tabbing) a:focus {
    align-items: center;
    right: 0;
    padding: 0.1rem 1.4rem;
-   background-color: rgba(255, 255, 255, 0.5);
+   background: rgba(255, 255, 255, 0.3);
+   box-shadow: 0 8px 32px 0 rgba(106, 109, 152, 0.37);
+   backdrop-filter: blur(10.5px);
+   -webkit-backdrop-filter: blur(10.5px);
+   border-radius: 10px;
+   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .nav__items {
@@ -645,8 +650,12 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 
 .footer {
+   position: static;
+   bottom: 0;
+   width: 100%;
    text-align: center;
-   padding: var(--gutter-medium) 0 var(--gutter-normal);
+
+   /* padding: var(--gutter-medium) 0 var(--gutter-normal); */
 }
 
 .footer__social-links {

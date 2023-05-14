@@ -1,39 +1,40 @@
 body {
-    font-family: 'Karla', sans-serif;
-    margin: 0;
-    padding: 0;
+   font-family: "Karla", sans-serif;
+   margin: 0;
+   padding: 0;
 }
 
 nav {
-    background-color: beige;
-    padding: 5px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    position: fixed;
-    width: 100%;
+   background-color: beige;
+   padding: 5px;
+   height: 30px;
+   display: flex;
+   align-items: center;
+   position: fixed;
+   width: 100%;
 }
-
 nav > h3 {
-    margin: 0;
+   padding: 0 4rem;
+   margin: 0;
 }
 
 #blog-list {
-    padding: 10px;
+   padding: 10px 4rem;
 }
 
 form {
-    padding: 60px 10px 10px;
-    display: grid;
-    background-color: lightblue;
+   padding: 60px 4rem 30px;
+   display: grid;
+   background-color: lightblue;
 }
 
-input#post-title, textarea#post-body {
-    margin-bottom: 10px;
+input#post-title,
+textarea#post-body {
+   margin-bottom: 10px;
 }
 
 button {
-    padding: 10px;
-    font-size: 18px;
-    cursor: pointer;
+   padding: 10px;
+   font-size: 18px;
+   cursor: pointer;
 }
