@@ -1,0 +1,42 @@
+* {
+   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+body {
+   background: url("./images/rio2.jpg");
+   background-position: center center;
+   background-attachment: fixed; /*should scroll or not? */
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100vh;
+   color: gold;
+   text-align: center;
+}
+body h1 {
+   font-size: 2.5rem;
+   margin: 0 auto;
+   padding: 4rem 0 2rem;
+}
+body .times {
+   list-style-type: none;
+   display: flex;
+   justify-content: space-evenly;
+}
+.times .timer-number {
+   margin-bottom: -0.5rem;
+   font-size: 4rem;
+   font-weight: bold;
+}
+
+button#converter {
+   padding: 0.6rem 2rem;
+   margin: 2rem auto;
+   font-size: 1.2rem;
+   font-weight: bold;
+   cursor: pointer;
+}
+.hidden {
+   display: none !important;
+}

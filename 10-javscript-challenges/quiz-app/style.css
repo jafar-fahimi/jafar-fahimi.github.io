@@ -1,0 +1,58 @@
+* {
+   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+body {
+   background-color: #efefef;
+   background: url(./images/nature.jpg) no-repeat;
+   background-size: cover;
+}
+body section {
+   border-radius: 5px;
+   width: 400px;
+   overflow: hidden; /* to make down corners with radius too!!!*/
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+   background-color: #fff;
+   padding: 2rem 0 0;
+}
+h2 {
+   text-align: center;
+   margin-bottom: 2rem;
+}
+h2#question-text {
+   padding-left: 3rem;
+   text-align: left;
+}
+ul {
+   list-style-type: none;
+   padding: 0 4rem 2rem;
+   margin: 0 auto;
+}
+input[type="radio" i] {
+   display: inline-block;
+   margin-right: 0.3rem;
+}
+.quiz-app li :hover {
+   cursor: pointer;
+}
+.quiz-app li {
+   margin: 0.8rem 0;
+}
+button {
+   width: 100%;
+   color: #fff;
+   background-color: rgba(0, 0, 255, 0.7);
+   border: none;
+   padding: 1rem 0;
+   font-size: 1.2rem;
+}
+button:hover {
+   cursor: pointer;
+   background-color: rgba(0, 0, 255, 0.9);
+}
